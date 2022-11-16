@@ -48,9 +48,10 @@
 				<div class="collapse navbar-collapse">
 					<nav class="navbar-left primary-menu">
 						<ul id="menu-%e5%af%bc%e8%88%aa" class="nav navbar-nav wpcom-adv-menu">
-							{{ #widgetMenuList }}
-								<li class="menu-item"><a href="{{ &url }}">{{ &title }}</a></li>
-							{{ /widgetMenuList }}
+							{{ #widgetCategoryList }}
+							<li class="cat-item cat-item-5 current-cat">
+								<a aria-current="page" href="/category/{{&.}}">{{&.}}</a></li>
+							{{ /widgetCategoryList }}
 						</ul>
 					</nav>
 					<div class="navbar-action pull-right">
@@ -132,7 +133,7 @@
 					</div>
 				</div>
 				<aside class="sidebar">
-					<div id="wpcom-post-thumb-3" class="widget widget_post_thumb">
+					<div id="wpcom-post-thumb-2" class="widget widget_post_thumb">
 						<h3 class="widget-title">
 							<span>近期文章</span></h3>
 						<ul>
@@ -150,7 +151,7 @@
 							{{ /widgetRecentlyList }}									
 						</ul>
 					</div>
-					<div id="categories-2" class="widget widget_categories">
+					<div id="categories-3" class="widget widget_categories">
 						<h3 class="widget-title">
 							<span>分类目录</span></h3>
 						<ul>
