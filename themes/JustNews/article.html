@@ -49,9 +49,11 @@
 				<div class="collapse navbar-collapse">
 					<nav class="navbar-left primary-menu">
 						<ul id="menu-%e5%af%bc%e8%88%aa" class="nav navbar-nav wpcom-adv-menu">
-							{{ #widgetMenuList }}
-								<li class="menu-item"><a href="{{ &url }}">{{ &title }}</a></li>
-							{{ /widgetMenuList }}
+							{{ #widgetCategoryList }}
+							<li class="cat-item cat-item-5 current-cat">
+								<a aria-current="page" href="/category/{{&.}}">{{&.}}</a></li>
+							{{ /widgetCategoryList }}
+
 						</ul>
 					</nav>
 					<div class="navbar-action pull-right">
@@ -157,10 +159,9 @@
 						<h3 class="widget-title">
 							<span>分类目录</span></h3>
 						<ul>
-							{{ #widgetCategoryList }}
-							<li class="cat-item cat-item-5 current-cat">
-								<a aria-current="page" href="/category/{{&.}}">{{&.}}</a></li>
-							{{ /widgetCategoryList }}
+							{{ #widgetMenuList }}
+								<li class="menu-item"><a href="{{ &url }}">{{ &title }}</a></li>
+							{{ /widgetMenuList }}
 						</ul>
 					</div>
 					<div id="tag_cloud-3" class="widget widget_tag_cloud">
