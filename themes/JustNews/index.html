@@ -37,11 +37,11 @@
 					</button>
 					<div class="logo">
 						{{ #OPT.logo }}
-						<a href="/" rel="home"><img src="" alt="{{ &OPT.siteName }}"></a>
+						<a href="/" rel="home"><img src="{{ &OPT.logo }}" alt="{{ &OPT.siteName }}"></a>
 						{{ /OPT.logo }}
 						
 						{{ ^OPT.logo }}
-						<a href="/" rel="home"><img src="" alt="平凡"></a>
+						<a href="/" rel="home"><img src="{{ &OPT.theme_github_path }}JustNews/files/logo2.png" alt="自定义图片"></a>
 						{{ /OPT.logo }}
 					</div>
 				</div>
